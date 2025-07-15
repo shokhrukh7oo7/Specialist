@@ -13,6 +13,7 @@
     position: absolute;
     top: 70%;
     left: 2%;
+    z-index: 2;
   }
 
   .header-wrapper .navbar-menu-wrapper.active {
@@ -38,6 +39,10 @@
 
   .header-wrapper .navbar-contact-wrapper {
     display: none;
+  }
+
+  .special-consultation .image-section .features-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -91,9 +96,36 @@
     width: 40px;
     height: 40px;
   }
+  .courses-wrapper
+    .courses-card
+    .course-content
+    .course-instructors
+    .instructor-avatars
+    img {
+    width: 40px;
+    height: 40px;
+  }
+  .special-consultation .image-section .features-grid {
+    grid-template-columns: 1fr;
+    margin-top: -50px;
+    padding: 30px 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
+  .top-bar {
+    flex-direction: row;
+  }
+  .top-bar .top-bar-left .contact-item:nth-child(1) {
+    display: none;
+  }
+  .top-bar .top-bar-left .contact-item:nth-child(3) {
+    display: none;
+  }
+  .top-bar .social-wrapper {
+    display: none;
+  }
   .top-bar .top-bar-left {
     flex-direction: column;
     gap: 8px;
@@ -110,7 +142,7 @@
   }
 
   .top-bar .top-bar-right .language-wrapper .dropdown-menu {
-    transform: translate(-30%, 26px) !important;
+    transform: translate(0%, 26px) !important;
   }
   .header-wrapper .navbar-menu-wrapper {
     border-radius: 32px;
@@ -118,6 +150,12 @@
 }
 
 @media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+  .course-card-wrapper {
+    padding: 0 12px;
+  }
   .header-wrapper {
     height: 600px;
   }

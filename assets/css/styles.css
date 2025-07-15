@@ -32,6 +32,7 @@
   --blue-color: #3f2aff;
   --green-color: #03b406;
   --light-grey-color: #d4dfe7;
+  --card-bg: #f7f7f7;
 }
 
 * {
@@ -338,9 +339,9 @@ p {
 }
 
 .header-wrapper .header-content .course-btn-wrapper .course-btn:hover {
-    background-color: transparent;
-    border-color: var(--text-color-white);
-    color: var(--text-color-white);
+  background-color: transparent;
+  border-color: var(--text-color-white);
+  color: var(--text-color-white);
 }
 
 /* video player start */
@@ -480,9 +481,246 @@ p {
 }
 
 .header-content .social-proof a {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--text-color-white);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color-white);
 }
 
 /* HEADER END */
+
+/* MAIN START */
+
+/* courses section start */
+
+.courses-wrapper {
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+
+.courses-wrapper h1 {
+  font-size: clamp(20px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  text-align: center;
+  margin: clamp(24px, 6vw, 79px) auto clamp(8px, 2.5vw, 48px);
+  padding: 0 20px;
+  line-height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.courses-wrapper .courses-card {
+  width: 100%;
+  background-color: var(--card-bg);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+}
+.courses-wrapper .courses-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.courses-wrapper .courses-card:hover .course-image img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.courses-wrapper .courses-card .course-image {
+  border: 3px solid var(--text-color-white);
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.courses-wrapper .courses-card .course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+.courses-wrapper .courses-card .course-content h3 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.courses-wrapper .courses-card .course-content .course-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.courses-wrapper .courses-card .course-content .course-features .feature-badge {
+  background-color: white;
+  color: var(--text-color-black);
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 500;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid var(--text-color-white);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.courses-wrapper .courses-card .course-content .course-instructors {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-avatars
+  img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: transform 0.3s;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-avatars
+  img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-avatars
+  img:not(:first-child) {
+  margin-left: -20px;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-names {
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.2;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-names
+  p {
+  font-weight: 700;
+}
+
+.courses-wrapper
+  .courses-card
+  .course-content
+  .course-instructors
+  .instructor-names
+  span {
+  font-weight: 500;
+}
+
+.courses-wrapper .courses-card .course-content .course-button {
+  background-color: var(--btn-bg-color);
+  color: var(--text-color-black);
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.courses-wrapper .courses-card .course-content .course-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.courses-wrapper .courses-card:hover .course-button {
+  background-color: var(--text-color-white);
+  border-color: var(--text-color-black);
+  color: var(--text-color-black);
+}
+/* courses section end */
+
+/* special consultation section start */
+.special-consultation {
+  padding: clamp(32px, 4vw, 64px) 0 clamp(15px, 2vw, 32px);
+}
+
+.special-consultation .section-title {
+  font-size: clamp(20px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: clamp(15px, 1.5vw, 24px);
+}
+.special-consultation .section-subtitle {
+  font-size: clamp(16px, 3vw, 32px);
+  font-weight: 400;
+  color: #727171;
+  text-align: center;
+  margin-bottom: clamp(16px, 5vw, 64px);
+}
+.special-consultation .image-section {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.special-consultation .image-section > img {
+  width: 100%;
+  height: clamp(300px, 57vw, 600px);
+  object-fit: cover;
+  border-radius: 32px;
+}
+.special-consultation .image-section .features-grid {
+  position: relative;
+  margin-top: -100px;
+  background-color: rgba(247, 247, 247, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 32px;
+  padding: 64px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 4vw, 48px);
+}
+.special-consultation .image-section .features-grid .feature-item h3 {
+  font-size: clamp(16px, 3vw, 32px);
+  font-weight: 700;
+  margin-bottom: clamp(10px, 1vw, 16px);
+}
+.special-consultation .image-section .features-grid .feature-item p {
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+/* special consultation section end */
+
+/* MAIN END */
