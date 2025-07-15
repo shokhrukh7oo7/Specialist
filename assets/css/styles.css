@@ -723,4 +723,77 @@ p {
 }
 /* special consultation section end */
 
+/* cta benner section start */
+.cta-banner {
+  position: relative;
+  height: 348px;
+  margin: clamp(15px, 2vw, 32px) 0 clamp(20px, 3vw, 46px);
+  background-color: var(--btn-bg-color);
+  border-radius: 32px;
+  overflow: hidden;
+}
+.cta-banner .cta-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.cta-banner .cta-content h2 {
+  font-size: clamp(20px, 5vw, 64px);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-color-black);
+}
+
+.cta-banner .cta-content p {
+  max-width: 717px;
+  font-size: clamp(16px, 3vw, 32px);
+  line-height: 120%;
+  margin-bottom: clamp(16px, 3vw, 32px);
+  color: var(--text-color-black);
+}
+
+.cta-banner .contact-btn {
+  padding: 14px 24px;
+  color: var(--text-color-black);
+  background-color: var(--text-color-white);
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  border-color: transparent;
+}
+.cta-banner .contact-btn:hover {
+  background-color: var(--text-color-black);
+  border-color: var(--btn-bg-color);
+  color: var(--btn-bg-color);
+}
+
+.cta-banner .vector-left {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.cta-banner .vector-right {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* cta benner section end */
+
 /* MAIN END */

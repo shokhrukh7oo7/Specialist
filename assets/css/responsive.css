@@ -44,6 +44,15 @@
   .special-consultation .image-section .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* .cta-banner .vector-left,
+  .vector-right {
+    display: none;
+  }*/
+
+  .cta-banner .vector-left,
+  .vector-right {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -111,6 +120,9 @@
     padding: 30px 20px;
     text-align: center;
   }
+  .cta-banner .cta-content p {
+    padding: 0 clamp(25px, 4vw, 60px);
+  }
 }
 
 @media (max-width: 600px) {
@@ -168,6 +180,9 @@
   }
   .header-wrapper .header-content .header-content-description {
     font-size: 16px;
+  }
+  .cta-banner {
+    height: 250px;
   }
 }
 
