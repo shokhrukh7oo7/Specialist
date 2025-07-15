@@ -15,25 +15,238 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
   </head>
   <body>
     <div class="container">
       <div class="top-bar">
         <div class="top-bar-left">
           <div class="contact-item">
-            
+            <img src="/assets/images/top-bar/envelope-simple.svg" alt="image" />
+            <a href="#">spetsialist.uz@gmail.com</a>
           </div>
+          <div class="divider">|</div>
           <div class="contact-item">
-            
+            <img src="/assets/images/top-bar/phone.svg" alt="image" />
+            <a href="tel:+998977009217">+998 97 700 92 17</a>
           </div>
+          <div class="divider">|</div>
           <div class="contact-item">
-            
+            <img src="/assets/images/top-bar/phone.svg" alt="image" />
+            <a href="tel:+998997009217">+998 99 700 92 17</a>
+          </div>
+        </div>
+
+        <div class="top-bar-right">
+          <div class="social-wrapper">
+            <p class="social-title">Мы в социальных сетях:</p>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://webline.uz/" target="_blank">
+                  <img
+                    src="/assets/images/top-bar/instagram-logo.svg"
+                    alt="Isntagram"
+                  />
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://webline.uz/" target="_blank">
+                  <img
+                    src="/assets/images/top-bar/telegram-logo.svg"
+                    alt="Telegram"
+                  />
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://webline.uz/" target="_blank">
+                  <img
+                    src="/assets/images/top-bar/youtube-logo.svg"
+                    alt="YouTube"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider">|</div>
+
+          <div class="language-wrapper">
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Русский
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Uzbek</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <header></header>
+    <header>
+      <div class="container">
+        <div
+          class="header-wrapper"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.25),
+                rgba(0, 0, 0, 0.25)
+              ),
+              url('/assets/images/banner/banner.jpg');
+          "
+        >
+          <nav class="navbar-wrapper">
+            <div class="navbar-logo-wrapper">
+              <a href="./index.html">
+                <img src="./assets/images/logo-black.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="navbar-menu-wrapper" id="nav-menu">
+              <ul class="navbar-menu-list">
+                <li class="navbar-menu-item">
+                  <a href="./pages/about-us.html">О нас</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="./pages/courses.html">Курсы</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="./pages/reviews.html">Отзывы</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="./pages/sertificates.html">Сертификаты</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="./pages/team.html">Команда</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="./pages/contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <div class="navbar-contact-wrapper d-block d-xl-none">
+                <button class="btn contact-btn" id="contact-btn">
+                  Свяжитесь с нами
+                </button>
+              </div>
+            </div>
+            <div class="navbar-contact-wrapper d-none d-xl-block">
+              <button class="btn contact-btn" id="contact-btn">
+                Свяжитесь с нами
+              </button>
+            </div>
+
+            <!-- Бургер-кнопка -->
+            <button
+              class="navbar-toggler d-xl-none"
+              type="button"
+              id="burger-btn"
+              aria-label="Toggle navigation"
+            >
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </button>
+          </nav>
+
+          <div class="header-content">
+            <h1 class="header-content-title">
+              Освойте новую специальность за считанные дни
+            </h1>
+
+            <p class="header-content-description">
+              Хотите открыть свое дело в сфере туризма, но не знаете с чего
+              начать? В нашем учебном центре мы обучим вас с нуля до
+              профессионала
+            </p>
+
+            <div class="course-btn-wrapper">
+              <a href="./courses.html" class="course-btn">Выбрать подходящий курс</a>
+
+              <div class="play-btn-wrapper">
+                <button
+                  type="button"
+                  class="btn btn-primary video-btn"
+                  data-toggle="modal"
+                  data-src="https://www.youtube.com/embed/h7M7f-afhvY"
+                  data-target="#myModal"
+                >
+                  Приветствие от руководителя <a class="play-btn" href="#"></a>
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="myModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe
+                            class="embed-responsive-item"
+                            src=""
+                            id="video"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-proof">
+              <div class="avatars">
+                <img
+                  src="./assets/images/social-prof/ellipse-2.png"
+                  alt="User"
+                />
+                <img
+                  src="./assets/images/social-prof/ellipse-3.png"
+                  alt="User"
+                />
+                <img
+                  src="./assets/images/social-prof/ellipse-4.png"
+                  alt="User"
+                />
+                <img
+                  src="./assets/images/social-prof/ellipse-5.png"
+                  alt="User"
+                />
+                <img
+                  src="./assets/images/social-prof/ellipse-6.png"
+                  alt="User"
+                />
+              </div>
+              <a href="#">Еще +194 выбрали СПЕЦИАЛИСТ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
+    <div class="overlay" id="overlay"></div>
 
     <!-- Bootstrap Bundle JS -->
     <script
@@ -42,7 +255,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+
     <!-- Custom JS -->
-    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
