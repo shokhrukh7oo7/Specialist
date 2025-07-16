@@ -12,14 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //============================================================================================
 
-// VIDEO SCRIPT START
+// VIDEO SCRIPT START FOR BANNER
+document.querySelectorAll(".play-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // отменяет прокрутку
+  });
+});
+
 $(document).ready(function () {
   // get video source from data-src button
   var $videoSrc;
   $(".video-btn").click(function () {
     $videoSrc = $(this).data("src");
   });
-  console.log($videoSrc);
+  //   console.log($videoSrc);
   // autoplay video on modal load
   $("#myModal").on("shown.bs.modal", function (e) {
     // youtube iframe configuration and settings
@@ -30,16 +36,45 @@ $(document).ready(function () {
   });
   // stop playing the youtube video when modal closed
   $("#myModal").on("hide.bs.modal", function (e) {
+    document.activeElement.blur();
     // stop video
-    $("#video").attr("src", $videoSrc);
+    $("#video").attr("src", "");
   });
 });
-// VIDEO SCRIPT END
+// VIDEO SCRIPT END FOR BANNER
 
 //============================================================================================
 
-// GSAP START
-
-// GSAP END
+new Glider(document.querySelector(".glider"), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    scrollLock: true,
+    rewind: true,
+    duration: 0.5,
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
+    },
+    responsive: [
+      {
+        breakpoint: 1200, // ≥ 1200px
+        settings: {
+          slidesToShow: 2.5,
+        }
+      },
+      {
+        breakpoint: 576, // 576px - 1199px
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 0, // < 576px
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 
 //============================================================================================

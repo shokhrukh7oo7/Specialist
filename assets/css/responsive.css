@@ -123,6 +123,13 @@
   .cta-banner .cta-content p {
     padding: 0 clamp(25px, 4vw, 60px);
   }
+
+  .testimonial-wrapper .glider-prev {
+    top: 0%;
+  }
+  .testimonial-wrapper .glider-next {
+    top: 0%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -195,5 +202,18 @@
   }
   .header-wrapper .navbar-menu-wrapper .navbar-contact-wrapper .contact-btn {
     padding: 10px 16px;
+  }
+  .testimonial-wrapper .glider-arrow-wrapper {
+    max-width: 100px;
+  }
+  .testimonial-wrapper .glider-prev {
+    right: 60%;
+    left: auto;
+    top: -40%;
+  }
+  .testimonial-wrapper .glider-next {
+    right: 0;
+    left: auto;
+    top: -40%;
   }
 }
