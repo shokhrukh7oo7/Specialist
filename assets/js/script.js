@@ -166,7 +166,7 @@ new Glider(document.querySelector(".sertificate"), {
     {
       breakpoint: 0, // < 576px
       settings: {
-        slidesToShow: 1.1,
+        slidesToShow: 1.3,
       },
     },
   ],
