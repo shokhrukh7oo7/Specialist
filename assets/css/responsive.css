@@ -224,6 +224,9 @@
   .sertificate-wrapper .glider-arrow-wrapper {
     right: 10px;
   }
+  .sertificate-wrapper .glider-wrapper .glider-contain .glider-item {
+    width: 410px !important;
+  }
 }
 
 @media (max-width: 395px) {
