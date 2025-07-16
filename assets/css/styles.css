@@ -807,9 +807,9 @@ p {
 }
 
 .testimonial-wrapper .glider-wrapper .glider-header {
-  padding-bottom: clamp(32px, 4vw, 64px);
   display: flex;
   justify-content: space-between;
+  padding: 0 10px clamp(32px, 4vw, 64px);
 }
 
 .testimonial-wrapper .glider-wrapper .glider-header h3 {
