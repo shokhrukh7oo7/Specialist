@@ -136,6 +136,12 @@
   .our-teacher-wrapper .glider-next-teacher {
     top: 0%;
   }
+  .sertificate-wrapper .glider-prev-teacher {
+    top: 0%;
+  }
+  .sertificate-wrapper .glider-next-teacher {
+    top: 0%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -211,6 +217,13 @@
   .our-teacher-wrapper .glider-arrow-wrapper {
     right: 10px;
   }
+  .sertificate-wrapper .glider-wrapper .glider-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sertificate-wrapper .glider-arrow-wrapper {
+    right: 10px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -234,6 +247,11 @@
     top: 0;
   }
   .testimonial-wrapper .glider-arrow-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sertificate-wrapper .glider-arrow-wrapper {
     position: absolute;
     right: 0;
     top: 0;

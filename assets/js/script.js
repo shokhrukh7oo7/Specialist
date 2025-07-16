@@ -127,4 +127,50 @@ new Glider(document.querySelector(".teacher"), {
 });
 // GLIDER OUT TEACHERS SCRIPT END
 
+// GLIDER OUT SERTIFICATE SCRIPT START
+new Glider(document.querySelector(".sertificate"), {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  scrollLock: true,
+  rewind: true,
+  duration: 0.5,
+  arrows: {
+    prev: ".glider-prev-sertificate",
+    next: ".glider-next-sertificate",
+  },
+  responsive: [
+    {
+      breakpoint: 1200, // ≥ 1200px
+      settings: {
+        slidesToShow: 4.3,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3.3,
+      },
+    },
+    {
+      breakpoint: 768, // 576px - 1199px
+      settings: {
+        slidesToShow: 2.1,
+      },
+    },
+    {
+      breakpoint: 576, // 576px - 1199px
+      settings: {
+        slidesToShow: 2.1,
+      },
+    },
+    {
+      breakpoint: 0, // < 576px
+      settings: {
+        slidesToShow: 1.1,
+      },
+    },
+  ],
+});
+// GLIDER OUT SERTIFICATE SCRIPT END
+
 //============================================================================================

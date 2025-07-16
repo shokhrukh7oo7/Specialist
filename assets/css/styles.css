@@ -1193,4 +1193,89 @@ p {
 }
 /* OUR TEACHERS SECTION END */
 
+/* OUR SERTIFICATE SECTION START */
+.sertificate-wrapper {
+  padding: clamp(32px, 4vw, 64px) 0;
+}
+
+.sertificate-wrapper .glider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 64px);
+}
+.sertificate-wrapper .glider-wrapper .glider-header h3 {
+  margin: 0;
+  font-size: clamp(18px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+
+.sertificate-wrapper .glider-wrapper .glider-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.sertificate-wrapper .glider-arrow-wrapper {
+  position: absolute;
+  right: 0;
+  top: -35%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sertificate-wrapper .glider-prev-sertificate {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
+}
+.sertificate-wrapper .glider-next-sertificate {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
+}
+
+.sertificate-wrapper .glider-wrapper .glider-contain .glider-track {
+  gap: 24px;
+}
+
+.sertificate-wrapper .glider-wrapper .glider-contain .glider-item {
+  position: relative;
+  border-radius: 24px;
+  width: 310px !important;
+  border: 12px solid #f9f9f9;
+}
+
+.sertificate-wrapper .glider-item img {
+  width: 100%;
+  /* height: auto;
+  aspect-ratio: 1 / 1.45;
+  object-fit: cover; */
+  height: 100%;
+  border-radius: 24px;
+}
+/* OUR SERTIFICATE SECTION END */
+
 /* MAIN END */
