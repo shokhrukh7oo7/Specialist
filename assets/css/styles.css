@@ -802,6 +802,12 @@ p {
   padding: clamp(32px, 4vw, 64px) 0;
 }
 
+.testimonial-wrapper .glider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 64px);
+}
+
 .testimonial-wrapper .glider-wrapper .glider-contain .glider-track {
   gap: 24px;
 }
@@ -809,12 +815,13 @@ p {
 .testimonial-wrapper .glider-wrapper .glider-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px clamp(32px, 4vw, 64px);
+  /* padding: 0 10px clamp(32px, 4vw, 64px); */
+  position: relative;
 }
 
 .testimonial-wrapper .glider-wrapper .glider-header h3 {
   margin: 0;
-  font-size: clamp(20px, 5vw, 64px);
+  font-size: clamp(18px, 5vw, 64px);
   font-weight: 700;
   color: var(--text-color-black);
 }
@@ -1045,30 +1052,151 @@ p {
 }
 
 .testimonial-wrapper .glider-arrow-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 200px;
+  position: absolute;
+  right: 0;
+  top: -35%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.testimonial-wrapper .glider-prev {
-  right: 35%;
-  left: auto;
-  top: 20%;
+.testimonial-wrapper .glider-prev-testimonial {
   background-color: #ffffff;
   padding: 10px 20px;
   border-radius: 12px;
   font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
 }
-.testimonial-wrapper .glider-next {
-  right: 0;
-  left: auto;
-  top: 20%;
+.testimonial-wrapper .glider-next-testimonial {
   background-color: #ffffff;
   padding: 10px 20px;
   border-radius: 12px;
   font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
 }
 
 /* testimonial section end */
+
+/* OUR TEACHERS SECTION START */
+.our-teacher-wrapper {
+  padding: clamp(32px, 4vw, 64px) 0;
+}
+
+.our-teacher-wrapper .glider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 64px);
+}
+.our-teacher-wrapper .glider-wrapper .glider-header h3 {
+  margin: 0;
+  font-size: clamp(18px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+
+.our-teacher-wrapper .glider-wrapper .glider-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.our-teacher-wrapper .glider-arrow-wrapper {
+  position: absolute;
+  right: 0;
+  top: -35%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.our-teacher-wrapper .glider-prev-teacher {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
+}
+.our-teacher-wrapper .glider-next-teacher {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: clamp(24px, 2vw, 32px);
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  border: none;
+}
+
+.our-teacher-wrapper .glider-wrapper .glider-contain .glider-track {
+  gap: 24px;
+}
+
+.our-teacher-wrapper .glider-wrapper .glider-contain .glider-item {
+  position: relative;
+  border-radius: 24px;
+  width: 421px !important;
+}
+
+.our-teacher-wrapper .glider-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.45;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.our-teacher-wrapper .glider-item .glider-item-image-wrapper {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.our-teacher-wrapper .glider-item .glider-item-image-wrapper h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  margin: 0;
+}
+
+.our-teacher-wrapper .glider-item .glider-item-image-wrapper p {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+}
+/* OUR TEACHERS SECTION END */
 
 /* MAIN END */

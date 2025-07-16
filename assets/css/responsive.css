@@ -124,10 +124,16 @@
     padding: 0 clamp(25px, 4vw, 60px);
   }
 
-  .testimonial-wrapper .glider-prev {
+  .testimonial-wrapper .glider-prev-testimonial {
     top: 0%;
   }
-  .testimonial-wrapper .glider-next {
+  .testimonial-wrapper .glider-next-testimonial {
+    top: 0%;
+  }
+  .our-teacher-wrapper .glider-prev-teacher {
+    top: 0%;
+  }
+  .our-teacher-wrapper .glider-next-teacher {
     top: 0%;
   }
 }
@@ -191,6 +197,20 @@
   .cta-banner {
     height: 250px;
   }
+  .testimonial-wrapper .glider-wrapper .glider-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .testimonial-wrapper .glider-arrow-wrapper {
+    right: 10px;
+  }
+  .our-teacher-wrapper .glider-wrapper .glider-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .our-teacher-wrapper .glider-arrow-wrapper {
+    right: 10px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -203,17 +223,19 @@
   .header-wrapper .navbar-menu-wrapper .navbar-contact-wrapper .contact-btn {
     padding: 10px 16px;
   }
-  .testimonial-wrapper .glider-arrow-wrapper {
-    max-width: 100px;
-  }
-  .testimonial-wrapper .glider-prev {
-    right: 60%;
-    left: auto;
-    top: -40%;
-  }
-  .testimonial-wrapper .glider-next {
+}
+
+/* MIN WIDTH */
+
+@media (min-width: 576px) {
+  .our-teacher-wrapper .glider-arrow-wrapper {
+    position: absolute;
     right: 0;
-    left: auto;
-    top: -40%;
+    top: 0;
+  }
+  .testimonial-wrapper .glider-arrow-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
