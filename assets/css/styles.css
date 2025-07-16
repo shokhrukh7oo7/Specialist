@@ -879,12 +879,6 @@ p {
   transition: 0.3s ease-in-out;
 }
 
-.testimonial-wrapper .play-btn-wrapper .video-btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
 .testimonial-wrapper .play-btn-wrapper .video-btn:focus {
   box-shadow: none;
 }
