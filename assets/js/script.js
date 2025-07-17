@@ -12,6 +12,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //============================================================================================
 
+// MODAL CONTACT START
+const showBtn = document.querySelectorAll("#contact-btn");
+const showModal = document.getElementById("contact-modal");
+const closeBtn = document.getElementById("close-btn");
+const overlay = document.getElementById("overlay");
+
+// add classlist hidden
+const addHidden = () => {
+  showModal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+// remove classlist hidden
+const removeHidden = () => {
+  showModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+showBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    removeHidden();
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  addHidden();
+});
+
+overlay.addEventListener("click", () => {
+  addHidden();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    addHidden();
+  }
+});
+// MODAL CONTACT END
+
+//============================================================================================
+
 // VIDEO SCRIPT START FOR BANNER
 document.querySelectorAll(".play-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -223,6 +264,7 @@ input.addEventListener("input", () => {
     input.value = "+" + input.value.replace(/\D/g, "");
   }
 });
+
 // Форма и валидация
 const form = document.getElementById("application-form");
 
@@ -274,6 +316,7 @@ form.addEventListener("submit", (e) => {
 });
 
 //============================================================================================
+// Fancybox for sertificate slider image zoom on click
 Fancybox.bind("[data-fancybox='gallery']", {
   Thumbs: false, // отключить превью
   Toolbar: {

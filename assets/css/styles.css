@@ -1520,6 +1520,71 @@ p {
 
 /* MAIN END */
 
+/* CONTACT MODAL START */
+.hidden {
+  display: none;
+}
+.contact-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 421px;
+  background-color: var(--text-color-white);
+  padding: clamp(16px, 1.5vw, 24px);
+  z-index: 10;
+  border-radius: 8px;
+}
+.contact-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact-modal .modal-header h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: 8px;
+}
+.contact-modal .modal-header p {
+  font-size: clamp(13px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.contact-modal .modal-header .close-btn {
+  padding: 0;
+}
+
+.contact-modal .modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: clamp(15px, 1.5vw, 24px) 0 0;
+}
+
+.contact-modal .modal-body .send-btn {
+  padding: clamp(10px, 1vw, 16px) 24px;
+  color: var(--text-color-black);
+  background-color: var(--btn-bg-color);
+  border-radius: 12px;
+  font-size: clamp(15px, 1.2vw, 18px);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border: 2px solid var(--btn-bg-color);
+  width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  z-index: 4;
+}
+/* CONTACT MODAL END */
 
 /* FOOTER SECTION START */
 .footer-wrapper {
@@ -1586,11 +1651,11 @@ p {
 }
 
 .footer-wrapper .footer-item .develop-wrapper {
-    margin-top: clamp(10px, 4vw, 50px);
+  margin-top: clamp(10px, 4vw, 50px);
 }
 
 .footer-wrapper .footer-item .develop-wrapper-mobile {
-    display: none;
+  display: none;
 }
 
 .footer-wrapper .footer-item .develop-wrapper p {
@@ -1606,7 +1671,7 @@ p {
 }
 
 .footer-wrapper .footer-item .develop-wrapper p a:hover {
-    color: var(--btn-bg-color);
+  color: var(--btn-bg-color);
 }
 
 .footer-wrapper .footer-item .form-header p {
