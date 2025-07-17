@@ -1493,6 +1493,26 @@ p {
   height: 20px;
 }
 
+.footer-wrapper .footer-item .develop-wrapper {
+    margin-top: clamp(10px, 4vw, 50px);
+}
+
+.footer-wrapper .footer-item .develop-wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.footer-wrapper .footer-item .develop-wrapper p a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.footer-wrapper .footer-item .develop-wrapper p a:hover {
+    color: var(--btn-bg-color);
+}
+
 .footer-wrapper .footer-item .form-header p {
   font-size: 14px;
   font-weight: 400;
@@ -1538,7 +1558,7 @@ p {
 .footer-wrapper .phone-group {
   display: flex;
   align-items: center;
-  background:  var(--text-color-white);
+  background: var(--text-color-white);
   border-radius: 8px;
   overflow: hidden;
 }

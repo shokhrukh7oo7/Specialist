@@ -52,6 +52,12 @@
   .tab-wrapper .tab-content .card {
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer-wrapper .footer-item .develop-wrapper {
+    display: none;
+  }
+  .footer-wrapper .footer-item .developer-wrapper-mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 992px) {
