@@ -199,26 +199,32 @@ triggers.forEach((trigger) => {
 
 // FOOTER FORM SECTION START
 // Маска телефона
-const phoneInput = document.getElementById("phone");
-phoneInput.addEventListener("input", (e) => {
-  let value = e.target.value.replace(/\D/g, "").substring(0, 9); // только цифры
-  value = value.replace(/(\d{2})(\d{3})(\d{2})(\d{2})/, "$1 $2-$3-$4");
-  e.target.value = value;
+const input = document.querySelector("#phone");
+
+const iti = window.intlTelInput(input, {
+  initialCountry: "auto",
+  geoIpLookup: function (callback) {
+    fetch("https://ipapi.co/json")
+      .then((res) => res.json())
+      .then((data) => callback(data.country_code))
+      .catch(() => callback("uz")); // fallback Uzbekistan
+  },
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
 
-// Валидация формы
+// Форма и валидация
 const form = document.getElementById("application-form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const name = document.getElementById("name");
-  const phone = document.getElementById("phone");
   const email = document.getElementById("email");
 
   let isValid = true;
 
-  // Name
+  // Имя
   if (name.value.trim().length < 2) {
     isValid = false;
     name.classList.add("input-error");
@@ -228,12 +234,12 @@ form.addEventListener("submit", (e) => {
     document.getElementById("name-error").textContent = "";
   }
 
-  // Phone
-  if (!/^\d{2} \d{3}-\d{2}-\d{2}$/.test(phone.value)) {
+  // Телефон
+  if (!iti.isValidNumber()) {
     isValid = false;
     phone.classList.add("input-error");
     document.getElementById("phone-error").textContent =
-      "Введите телефон полностью";
+      "Введите корректный номер";
   } else {
     phone.classList.remove("input-error");
     document.getElementById("phone-error").textContent = "";
@@ -249,18 +255,18 @@ form.addEventListener("submit", (e) => {
     document.getElementById("email-error").textContent = "";
   }
 
-  // Submit
+  // Отправка
   if (isValid) {
     alert("Заявка отправлена!");
     form.reset();
+    iti.setCountry("uz"); // сброс страны на default
   }
 });
-// FOOTER FORM SECTION END
 
 //============================================================================================
 Fancybox.bind("[data-fancybox='gallery']", {
-  Thumbs: false,        // отключить превью
+  Thumbs: false, // отключить превью
   Toolbar: {
-    display: ['close'], // только кнопка закрытия
+    display: ["close"], // только кнопка закрытия
   },
 });
