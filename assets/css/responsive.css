@@ -44,14 +44,13 @@
   .special-consultation .image-section .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .cta-banner .vector-left,
-  .vector-right {
-    display: none;
-  }*/
 
   .cta-banner .vector-left,
   .vector-right {
     display: none;
+  }
+  .tab-wrapper .tab-content .card {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -226,6 +225,14 @@
   }
   .sertificate-wrapper .glider-wrapper .glider-contain .glider-item {
     width: 410px !important;
+  }
+  .tab-wrapper .tab-content .card {
+    grid-template-columns: 1fr;
+  }
+  .tab-wrapper .tab-content .card .card-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 

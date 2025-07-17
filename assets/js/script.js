@@ -174,3 +174,29 @@ new Glider(document.querySelector(".sertificate"), {
 // GLIDER OUT SERTIFICATE SCRIPT END
 
 //============================================================================================
+
+// TAB SCRIPT START
+const triggers = document.querySelectorAll(".tab-trigger");
+const contents = document.querySelectorAll(".tab-content");
+
+triggers.forEach(trigger => {
+  trigger.addEventListener("click", () => {
+    const target = trigger.dataset.tab;
+
+    // Remove active class from all
+    triggers.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    // Add to selected
+    trigger.classList.add("active");
+    document.getElementById(target).classList.add("active");
+  });
+});
+
+// TAB SCRIPT END
+
+//============================================================================================
+
+
+
+//============================================================================================

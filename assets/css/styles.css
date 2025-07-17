@@ -1312,6 +1312,193 @@ p {
 }
 /* OUR TEACHERS SECTION END */
 
+/* TAB SECTION START */
+.tab-wrapper {
+  padding: clamp(32px, 4vw, 64px) 0;
+  background-color: var(--btn-bg-color);
+}
+.tab-wrapper .tabs-container {
+  width: 100%;
+}
+
+.tab-wrapper .tabs-container h3 {
+  margin: 0 0 clamp(16px, 2vw, 32px);
+  font-size: clamp(18px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  text-align: center;
+}
+
+.tab-wrapper .tabs-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+  background: #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #bcdc0a;
+  padding: 4px;
+}
+
+.tab-wrapper .tab-trigger {
+  padding: 0.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 500;
+  color: var(--text-color-black);
+  margin: 0;
+  transition: background 0.3s;
+  border-radius: 14px;
+}
+
+.tab-wrapper .tab-trigger.active {
+  background: white;
+  border-radius: 14px;
+}
+
+.tab-wrapper .tab-content {
+  display: none;
+}
+
+.tab-wrapper .tab-content.active {
+  display: block;
+}
+
+.tab-wrapper .tab-content .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 48px) clamp(18px, 1.5vw, 26px);
+  background-color: transparent;
+  border: none;
+  padding: clamp(32px, 4vw, 64px) 10px;
+}
+
+.tab-wrapper .tab-content .card .card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+
+.tab-wrapper .tab-content .card .card-item img {
+  width: 45px;
+  height: 45px;
+}
+
+.tab-wrapper .tab-content .card .card-item p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+  line-height: 120%;
+}
+
+.tab-wrapper .tabs-container .tab-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(16px, 2vw, 32px);
+}
+
+.tab-wrapper .tabs-container .tab-footer-wrapper h3 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.tab-wrapper .tabs-container .tab-footer-wrapper .contact-btn {
+  padding: 14px 24px;
+  color: var(--text-color-black);
+  background-color: var(--text-color-white);
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  border-color: transparent;
+}
+.tab-wrapper .tabs-container .tab-footer-wrapper .contact-btn:hover {
+  background-color: var(--text-color-black);
+  border-color: var(--btn-bg-color);
+  color: var(--btn-bg-color);
+}
+
+/* .tab-wrapper .card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.tab-wrapper .card-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-wrapper .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.tab-wrapper .card-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.tab-wrapper .card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tab-wrapper .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tab-wrapper label {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.tab-wrapper input {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.tab-wrapper .card-footer {
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+  text-align: right;
+}
+
+.tab-wrapper .btn {
+  background-color: #0d9488;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-wrapper .btn:hover {
+  background-color: #0f766e;
+} */
+/* TAB SECTION END */
+
 /* OUR SERTIFICATE SECTION START */
 .sertificate-wrapper {
   padding: clamp(32px, 4vw, 64px) 0;
