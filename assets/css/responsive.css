@@ -274,19 +274,19 @@
 /* MIN WIDTH */
 
 @media (min-width: 576px) {
-  .our-teacher-wrapper .glider-arrow-wrapper {
+  /* .our-teacher-wrapper .glider-arrow-wrapper {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .testimonial-wrapper .glider-arrow-wrapper {
+  } */
+  /* .testimonial-wrapper .glider-arrow-wrapper {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .sertificate-wrapper .glider-arrow-wrapper {
+  } */
+  /* .sertificate-wrapper .glider-arrow-wrapper {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
 }

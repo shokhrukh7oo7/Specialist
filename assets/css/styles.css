@@ -817,6 +817,7 @@ p {
   justify-content: space-between;
   /* padding: 0 10px clamp(32px, 4vw, 64px); */
   position: relative;
+  align-items: center;
 }
 
 .testimonial-wrapper .glider-wrapper .glider-header h3 {
@@ -1046,9 +1047,9 @@ p {
 }
 
 .testimonial-wrapper .glider-arrow-wrapper {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: -35%;
+  top: -35%; */
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1110,11 +1111,12 @@ p {
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 .our-teacher-wrapper .glider-arrow-wrapper {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: -35%;
+  top: -35%; */
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1451,11 +1453,12 @@ p {
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 .sertificate-wrapper .glider-arrow-wrapper {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: -35%;
+  top: -35%; */
   display: flex;
   align-items: center;
   gap: 16px;
