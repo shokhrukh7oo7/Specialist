@@ -258,3 +258,9 @@ form.addEventListener("submit", (e) => {
 // FOOTER FORM SECTION END
 
 //============================================================================================
+Fancybox.bind("[data-fancybox='gallery']", {
+  Thumbs: false,        // отключить превью
+  Toolbar: {
+    display: ['close'], // только кнопка закрытия
+  },
+});
