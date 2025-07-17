@@ -1497,6 +1497,10 @@ p {
     margin-top: clamp(10px, 4vw, 50px);
 }
 
+.footer-wrapper .footer-item .develop-wrapper-mobile {
+    display: none;
+}
+
 .footer-wrapper .footer-item .develop-wrapper p {
   font-size: 14px;
   font-weight: 500;
