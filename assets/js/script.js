@@ -213,6 +213,16 @@ const iti = window.intlTelInput(input, {
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
 
+input.addEventListener("input", () => {
+  // Если поле пустое — не вмешиваемся
+  if (input.value.length === 0) return;
+
+  // Если пользователь только начал ввод и забыл + — добавим его
+  if (!input.value.startsWith("+")) {
+    // Только при первом символе
+    input.value = "+" + input.value.replace(/\D/g, "");
+  }
+});
 // Форма и валидация
 const form = document.getElementById("application-form");
 
