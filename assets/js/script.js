@@ -179,13 +179,13 @@ new Glider(document.querySelector(".sertificate"), {
 const triggers = document.querySelectorAll(".tab-trigger");
 const contents = document.querySelectorAll(".tab-content");
 
-triggers.forEach(trigger => {
+triggers.forEach((trigger) => {
   trigger.addEventListener("click", () => {
     const target = trigger.dataset.tab;
 
     // Remove active class from all
-    triggers.forEach(t => t.classList.remove("active"));
-    contents.forEach(c => c.classList.remove("active"));
+    triggers.forEach((t) => t.classList.remove("active"));
+    contents.forEach((c) => c.classList.remove("active"));
 
     // Add to selected
     trigger.classList.add("active");
@@ -197,6 +197,64 @@ triggers.forEach(trigger => {
 
 //============================================================================================
 
+// FOOTER FORM SECTION START
+// Маска телефона
+const phoneInput = document.getElementById("phone");
+phoneInput.addEventListener("input", (e) => {
+  let value = e.target.value.replace(/\D/g, "").substring(0, 9); // только цифры
+  value = value.replace(/(\d{2})(\d{3})(\d{2})(\d{2})/, "$1 $2-$3-$4");
+  e.target.value = value;
+});
 
+// Валидация формы
+const form = document.getElementById("application-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name");
+  const phone = document.getElementById("phone");
+  const email = document.getElementById("email");
+
+  let isValid = true;
+
+  // Name
+  if (name.value.trim().length < 2) {
+    isValid = false;
+    name.classList.add("input-error");
+    document.getElementById("name-error").textContent = "Введите имя";
+  } else {
+    name.classList.remove("input-error");
+    document.getElementById("name-error").textContent = "";
+  }
+
+  // Phone
+  if (!/^\d{2} \d{3}-\d{2}-\d{2}$/.test(phone.value)) {
+    isValid = false;
+    phone.classList.add("input-error");
+    document.getElementById("phone-error").textContent =
+      "Введите телефон полностью";
+  } else {
+    phone.classList.remove("input-error");
+    document.getElementById("phone-error").textContent = "";
+  }
+
+  // Email
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    isValid = false;
+    email.classList.add("input-error");
+    document.getElementById("email-error").textContent = "Некорректная почта";
+  } else {
+    email.classList.remove("input-error");
+    document.getElementById("email-error").textContent = "";
+  }
+
+  // Submit
+  if (isValid) {
+    alert("Заявка отправлена!");
+    form.reset();
+  }
+});
+// FOOTER FORM SECTION END
 
 //============================================================================================

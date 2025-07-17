@@ -1140,7 +1140,10 @@
               <div class="tab-content" id="password">
                 <div class="card">
                   <div class="card-item">
-                    <img src="/assets/images/tab/identification-badge.svg" alt="image" />
+                    <img
+                      src="/assets/images/tab/identification-badge.svg"
+                      alt="image"
+                    />
                     <p>
                       Подготовьте и отправьте нам своё резюме. Пройдите
                       собеседование с работодателем — и начните свою карьеру в
@@ -1148,14 +1151,14 @@
                     </p>
                   </div>
                   <div class="card-item">
-                    <img src="/assets/images/tab/building-office.svg" alt="image" />
+                    <img
+                      src="/assets/images/tab/building-office.svg"
+                      alt="image"
+                    />
                     <p>Пройдите стажировку в действующем турагентстве.</p>
                   </div>
                   <div class="card-item">
-                    <img
-                      src="/assets/images/tab/pencil-line.svg"
-                      alt="image"
-                    />
+                    <img src="/assets/images/tab/pencil-line.svg" alt="image" />
                     <p>
                       Свяжитесь с нашим отделом заботы, чтобы вместе со
                       специалистом подобрать подходящий курс и удобную дату
@@ -1163,24 +1166,21 @@
                     </p>
                   </div>
                   <div class="card-item">
-                    <img src="/assets/images/tab/airplane-tilt.svg" alt="image" />
+                    <img
+                      src="/assets/images/tab/airplane-tilt.svg"
+                      alt="image"
+                    />
                     <p>Сдайте итоговый экзамен и получите сертификат.</p>
                   </div>
                   <div class="card-item">
-                    <img
-                      src="/assets/images/tab/vault.svg"
-                      alt="image"
-                    />
+                    <img src="/assets/images/tab/vault.svg" alt="image" />
                     <p>
                       Внесите депозит — он гарантирует вам место на выбранный
                       поток.
                     </p>
                   </div>
                   <div class="card-item">
-                    <img
-                      src="/assets/images/tab/headset.svg"
-                      alt="image"
-                    />
+                    <img src="/assets/images/tab/headset.svg" alt="image" />
                     <p>
                       Пройдите обучение по актуальной программе от практиков
                       туризма.
@@ -1244,7 +1244,132 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <div class="footer-logo">
+                  <img src="/assets/images/logo.svg" alt="img" />
+                </div>
+                <ul>
+                  <li>
+                    <img src="/assets/images/footer/map-pin.svg" alt="image" />
+                    <p>г. Ташкент, Мирабадский район, Авлие-Ота 3</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/footer/envelope-simple.svg"
+                      alt="image"
+                    />
+                    <a href="mailto:spetsialist.uz@gmail.com"
+                      >spetsialist.uz@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <img src="/assets/images/footer/phone.svg" alt="image" />
+                    <a href="tel:+998977009217">+99897 700 92 17</a>
+                  </li>
+                  <li>
+                    <img src="/assets/images/footer/phone.svg" alt="image" />
+                    <a href="tel:+998997009217">+99899 700 92 17</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <h4>Ссылка</h4>
+                <ul>
+                  <li>
+                    <a href="#">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#">Курсы</a>
+                  </li>
+                  <li>
+                    <a href="#">Сертификаты</a>
+                  </li>
+                  <li>
+                    <a href="#">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <h4>Соцсети</h4>
+                <ul>
+                  <li>
+                    <a href="#">Telegram</a>
+                  </li>
+                  <li>
+                    <a href="#">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#">Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Threeds</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <div class="form-header">
+                  <h4>Оставьте свои данные</h4>
+                  <p>И наши менеджеры свяжутся с вами скоро</p>
+                </div>
+                <form id="application-form" novalidate>
+                  <div class="form-group">
+                    <input type="text" id="name" placeholder="Имя" required />
+                    <div class="error-text" id="name-error"></div>
+                  </div>
+
+                  <div class="form-group phone-group">
+                    <div class="phone-code">
+                      <img src="https://flagcdn.com/w40/uz.png" alt="UZ" />
+                      <span>+998</span>
+                    </div>
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="phone-input"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </div>
+                  <div class="error-text" id="phone-error"></div>
+
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Эл.почта"
+                      required
+                    />
+                    <div class="error-text" id="email-error"></div>
+                  </div>
+
+                  <button type="submit" class="btn contact-btn" id="contact-btn">Отправить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <div class="overlay" id="overlay"></div>
 
