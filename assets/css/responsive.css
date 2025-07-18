@@ -269,6 +269,9 @@
   .header-wrapper .navbar-menu-wrapper .navbar-contact-wrapper .contact-btn {
     padding: 10px 16px;
   }
+  .contact-modal {
+    max-width: 300px;
+  }
 }
 
 /* MIN WIDTH */
