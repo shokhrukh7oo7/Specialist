@@ -3,8 +3,23 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
+  .navbar-wrapper-default {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 
   .header-wrapper .navbar-menu-wrapper {
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 20px;
+    order: 3;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    z-index: 2;
+  }
+  .header-wrapper-default .navbar-menu-wrapper {
     display: none;
     flex-direction: column;
     width: 95%;
@@ -19,8 +34,17 @@
   .header-wrapper .navbar-menu-wrapper.active {
     display: flex;
   }
+  .header-wrapper-default .navbar-menu-wrapper.active {
+    display: flex;
+  }
 
   .header-wrapper .navbar-menu-wrapper ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 15px 24px;
+  }
+  .header-wrapper-default .navbar-menu-wrapper ul {
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -32,12 +56,25 @@
     width: 100%;
   }
 
+  .header-wrapper-default .navbar-menu-contact {
+    padding: 10px 24px;
+    width: 100%;
+  }
+
   .header-wrapper .navbar-contact-wrapper .contact-btn {
     width: 100%;
     text-align: center;
   }
 
+  .header-wrapper-default .navbar-contact-wrapper .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+
   .header-wrapper .navbar-contact-wrapper {
+    display: none;
+  }
+  .header-wrapper-default .navbar-contact-wrapper {
     display: none;
   }
 
@@ -58,6 +95,9 @@
   .footer-wrapper .footer-item .develop-wrapper-mobile {
     display: block;
   }
+  .header-wrapper-default .navbar-menu-wrapper ul li a {
+    color: var(--text-color-white);
+  }
 }
 
 @media (max-width: 992px) {
@@ -68,6 +108,11 @@
     margin: 80px auto 0;
   }
   .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 16px;
+  }
+  .top-bar-wrapper {
     flex-direction: column;
     gap: 10px;
     padding: 16px 16px;
@@ -90,6 +135,15 @@
     max-width: 200px;
   }
   .header-wrapper .navbar-wrapper {
+    padding: 20px 20px;
+  }
+  .header-wrapper-default .header-content {
+    margin: 60px auto 0;
+  }
+  .header-wrapper-default .navbar-logo-wrapper img {
+    max-width: 200px;
+  }
+  .header-wrapper-default .navbar-wrapper {
     padding: 20px 20px;
   }
   .header-wrapper .header-content .header-content-title {
@@ -151,10 +205,44 @@
   .sertificate-wrapper .glider-next-teacher {
     top: 0%;
   }
+  /* about us start */
+  .about-us-content h3 {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .about-us-content .about-us-intro-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-us-content .about-us-list-wrapper .about-us-list {
+    padding: 0 10px;
+  }
+  .about-us-content .about-us-list-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .about-us-content .about-us-list-wrapper h3 {
+    margin-bottom: 10px;
+  }
+  .about-us-content .about-us-list-wrapper .about-us-list-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us-content .about-us-list-wrapper .about-us-list-item .about-us-list-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* about us end */
 }
 
 @media (max-width: 600px) {
   .top-bar {
+    flex-direction: row;
+  }
+  .top-bar-wrapper {
     flex-direction: row;
   }
   .top-bar .top-bar-left .contact-item:nth-child(1) {
@@ -164,6 +252,15 @@
     display: none;
   }
   .top-bar .social-wrapper {
+    display: none;
+  }
+  .top-bar-wrapper .top-bar-left .contact-item:nth-child(1) {
+    display: none;
+  }
+  .top-bar-wrapper .top-bar-left .contact-item:nth-child(3) {
+    display: none;
+  }
+  .top-bar-wrapper .social-wrapper {
     display: none;
   }
   .top-bar .top-bar-left {
@@ -182,6 +279,24 @@
   }
 
   .top-bar .top-bar-right .language-wrapper .dropdown-menu {
+    transform: translate(0%, 26px) !important;
+  }
+  .top-bar-wrapper .top-bar-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .top-bar-wrapper .top-bar-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .top-bar-wrapper .top-bar-left .divider,
+  .top-bar-right .divider {
+    display: none;
+  }
+
+  .top-bar-wrapper .top-bar-right .language-wrapper .dropdown-menu {
     transform: translate(0%, 26px) !important;
   }
   .header-wrapper .navbar-menu-wrapper {
@@ -257,6 +372,12 @@
     justify-content: center;
     align-items: center;
   }
+  /* about us start */
+  .about-us-banner-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* about us end */
 }
 
 @media (max-width: 395px) {
@@ -275,21 +396,3 @@
 }
 
 /* MIN WIDTH */
-
-@media (min-width: 576px) {
-  /* .our-teacher-wrapper .glider-arrow-wrapper {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
-  /* .testimonial-wrapper .glider-arrow-wrapper {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
-  /* .sertificate-wrapper .glider-arrow-wrapper {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
-}

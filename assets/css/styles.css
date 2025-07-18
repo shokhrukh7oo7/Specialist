@@ -1564,6 +1564,24 @@ p {
   margin: clamp(15px, 1.5vw, 24px) 0 0;
 }
 
+.contact-modal .modal-body form input,
+.contact-modal .modal-body form textarea {
+  padding: 12px 16px;
+  font-size: clamp(14px, 1vw, 16px);
+  color: var(--text-color-black);
+}
+.contact-modal .modal-body form input:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.1rem var(--btn-bg-color);
+}
+
+.contact-modal .modal-body form textarea:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.1rem var(--btn-bg-color);
+}
+
 .contact-modal .modal-body .send-btn {
   padding: clamp(10px, 1vw, 16px) 24px;
   color: var(--text-color-black);
@@ -1585,6 +1603,334 @@ p {
   z-index: 4;
 }
 /* CONTACT MODAL END */
+
+/* =============================================================== */
+
+/* ABOUT PAGE CUSTOM CSS START */
+.container-bg {
+  background-color: var(--btn-bg-color);
+}
+.top-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 44px;
+}
+
+.top-bar-wrapper .top-bar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.top-bar-wrapper .top-bar-left .contact-item {
+  display: flex;
+  gap: 4px;
+}
+
+.top-bar-wrapper .top-bar-left .contact-item img {
+  width: 16px;
+}
+
+.top-bar-wrapper .top-bar-left .contact-item a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  transition: 0.3s ease-in-out;
+}
+
+.top-bar-wrapper .top-bar-left .contact-item a:hover {
+  color: var(--green-color);
+}
+
+.top-bar-wrapper .top-bar-left .divider,
+.top-bar-right .divider {
+  color: var(--grey-color);
+}
+
+.top-bar-wrapper .top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar-wrapper .social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar-wrapper .social-wrapper .social-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-black);
+}
+
+.top-bar-wrapper .social-wrapper ul {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar-wrapper .social-wrapper ul li img {
+  max-width: 16px;
+}
+
+.top-bar-wrapper .social-wrapper ul li:hover a img {
+  transform: scale(1.2);
+}
+
+.top-bar-wrapper .language-wrapper .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+
+.top-bar-wrapper .language-wrapper .btn {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-black);
+}
+
+.top-bar-wrapper .language-wrapper .dropdown-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-black);
+}
+
+.header-wrapper-default .navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 44px;
+  position: relative;
+}
+
+.navbar-wrapper-default .navbar-logo-wrapper img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Бургер-кнопка */
+.header-wrapper-default .burger-line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-color-black);
+  display: block;
+}
+
+.header-wrapper-default .navbar-menu-wrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--text-color-white);
+  box-shadow: 0px 2px 3px 0px rgba(34, 60, 80, 0.5);
+  border-radius: 52px;
+}
+
+.header-wrapper-default .navbar-menu-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 15px 24px;
+}
+
+.header-wrapper-default .navbar-menu-wrapper ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  transition: 0.3s ease-in-out;
+}
+
+.header-wrapper-default .navbar-menu-wrapper ul li a:hover {
+  color: var(--btn-bg-color);
+}
+
+.header-wrapper-default .navbar-menu-wrapper .navbar-contact-wrapper {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.header-wrapper-default
+  .navbar-menu-wrapper
+  .navbar-contact-wrapper
+  .contact-btn:hover {
+  background-color: transparent;
+  border-color: var(--btn-bg-color);
+  color: var(--btn-bg-color);
+}
+
+.header-wrapper-default .navbar-contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-wrapper-default .navbar-contact-wrapper .contact-btn {
+  padding: 14px 24px;
+  color: var(--text-color-black);
+  background-color: var(--btn-bg-color);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.header-wrapper-default .navbar-contact-wrapper .contact-btn:hover {
+  background-color: var(--text-color-black);
+  color: var(--btn-bg-color);
+}
+
+.about-us-banner-wrapper {
+  padding: 8px 0 clamp(20px, 3vw, 40px);
+}
+.about-us-banner-wrapper img {
+  width: 100%;
+  max-height: 542px;
+  object-fit: cover;
+}
+.about-us-content h3 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+  line-height: 120%;
+}
+.about-us-content h3 span {
+  font-weight: 500;
+}
+.about-us-content .about-us-intro-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: clamp(10px, 4vw, 64px) 0;
+}
+.about-us-content .about-us-intro-content h3 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.about-us-content .about-us-intro-content p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.about-us-content .about-us-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: clamp(10px, 4vw, 64px) 0 clamp(64px, 6vw, 128px);
+}
+.about-us-content .about-us-list-wrapper h3 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.about-us-content .about-us-list-wrapper .about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+.about-us-content .about-us-list-wrapper .about-us-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: clamp(20px, 3vw, 38px);
+  border-bottom: 1px solid var(--light-grey-color);
+  padding-bottom: clamp(14px, 1.5vw, 24px);
+}
+.about-us-content .about-us-list-wrapper .about-us-list-item h3 {
+  color: var(--light-grey-color);
+  margin: 0;
+  font-size: clamp(18px, 5vw, 64px);
+  font-weight: 700;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(10px, 1vw, 16px);
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  h4 {
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 400;
+  color: #777777;
+  margin: 0;
+  line-height: 140%;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  .about-us-list-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  .about-us-list-btn-wrapper
+  p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  .about-us-list-btn-wrapper
+  a::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+}
+.about-us-content
+  .about-us-list-wrapper
+  .about-us-list-item
+  .about-us-list-content
+  .about-us-list-btn-wrapper
+  a
+  img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ABOUT PAGE CUSTOM CSS END */
+
+/* =============================================================== */
+/* =============================================================== */
 
 /* FOOTER SECTION START */
 .footer-wrapper {

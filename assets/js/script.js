@@ -87,131 +87,82 @@ $(document).ready(function () {
 //============================================================================================
 
 // GLIDER TESTIMONIAL SCRIPT START
-new Glider(document.querySelector(".glider"), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  scrollLock: true,
-  rewind: true,
-  duration: 0.5,
-  arrows: {
-    prev: ".glider-prev-testimonial",
-    next: ".glider-next-testimonial",
-  },
-  responsive: [
+function initGliders() {
+  const sliders = [
     {
-      breakpoint: 1200, // ≥ 1200px
-      settings: {
-        slidesToShow: 2.5,
-      },
-    },
-    {
-      breakpoint: 576, // 576px - 1199px
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 0, // < 576px
-      settings: {
+      selector: ".glider",
+      options: {
         slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        rewind: true,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev-testimonial",
+          next: ".glider-next-testimonial",
+        },
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 2.5 } },
+          { breakpoint: 576, settings: { slidesToShow: 2 } },
+          { breakpoint: 0, settings: { slidesToShow: 1 } },
+        ],
       },
     },
-  ],
-});
-// GLIDER TESTIMONIAL SCRIPT END
+    {
+      selector: ".teacher",
+      options: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        rewind: true,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev-teacher",
+          next: ".glider-next-teacher",
+        },
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 3.1 } },
+          { breakpoint: 992, settings: { slidesToShow: 2.3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 576, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 0, settings: { slidesToShow: 1.1 } },
+        ],
+      },
+    },
+    {
+      selector: ".sertificate",
+      options: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        rewind: true,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev-sertificate",
+          next: ".glider-next-sertificate",
+        },
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 4.3 } },
+          { breakpoint: 992, settings: { slidesToShow: 3.3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 576, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 0, settings: { slidesToShow: 1.1 } },
+        ],
+      },
+    },
+  ];
 
-//============================================================================================
+  sliders.forEach((slider) => {
+    const element = document.querySelector(slider.selector);
+    if (element) {
+      new Glider(element, slider.options);
+    }
+  });
+}
 
-// GLIDER OUT TEACHERS SCRIPT START
-new Glider(document.querySelector(".teacher"), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  scrollLock: true,
-  rewind: true,
-  duration: 0.5,
-  arrows: {
-    prev: ".glider-prev-teacher",
-    next: ".glider-next-teacher",
-  },
-  responsive: [
-    {
-      breakpoint: 1200, // ≥ 1200px
-      settings: {
-        slidesToShow: 3.1,
-      },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2.3,
-      },
-    },
-    {
-      breakpoint: 768, // 576px - 1199px
-      settings: {
-        slidesToShow: 2.1,
-      },
-    },
-    {
-      breakpoint: 576, // 576px - 1199px
-      settings: {
-        slidesToShow: 2.1,
-      },
-    },
-    {
-      breakpoint: 0, // < 576px
-      settings: {
-        slidesToShow: 1.1,
-      },
-    },
-  ],
-});
-// GLIDER OUT TEACHERS SCRIPT END
+// Вызов при полной загрузке страницы
+window.addEventListener("DOMContentLoaded", initGliders);
 
-// GLIDER OUT SERTIFICATE SCRIPT START
-new Glider(document.querySelector(".sertificate"), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  scrollLock: true,
-  rewind: true,
-  duration: 0.5,
-  arrows: {
-    prev: ".glider-prev-sertificate",
-    next: ".glider-next-sertificate",
-  },
-  responsive: [
-    {
-      breakpoint: 1200, // ≥ 1200px
-      settings: {
-        slidesToShow: 4.3,
-      },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3.3,
-      },
-    },
-    {
-      breakpoint: 768, // 576px - 1199px
-      settings: {
-        slidesToShow: 2.1,
-      },
-    },
-    {
-      breakpoint: 576, // 576px - 1199px
-      settings: {
-        slidesToShow: 2.1,
-      },
-    },
-    {
-      breakpoint: 0, // < 576px
-      settings: {
-        slidesToShow: 1.1,
-      },
-    },
-  ],
-});
 // GLIDER OUT SERTIFICATE SCRIPT END
 
 //============================================================================================
