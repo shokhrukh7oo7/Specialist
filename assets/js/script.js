@@ -90,7 +90,7 @@ $(document).ready(function () {
 function initGliders() {
   const sliders = [
     {
-      selector: ".glider",
+      selector: ".testimonial",
       options: {
         slidesToShow: 1,
         slidesToScroll: 1,

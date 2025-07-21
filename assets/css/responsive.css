@@ -125,6 +125,11 @@
   .footer-wrapper .col-12:nth-child(3) {
     justify-content: start;
   }
+
+  .about-info-wrapper .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -230,7 +235,10 @@
     justify-content: center;
     align-items: center;
   }
-  .about-us-content .about-us-list-wrapper .about-us-list-item .about-us-list-content {
+  .about-us-content
+    .about-us-list-wrapper
+    .about-us-list-item
+    .about-us-list-content {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -376,6 +384,17 @@
   .about-us-banner-wrapper {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .about-info-wrapper p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-info-wrapper .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-info-wrapper .about-info-container .about-info-item {
+    padding: 0 10px;
   }
   /* about us end */
 }

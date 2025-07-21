@@ -1927,6 +1927,54 @@ p {
   height: 24px;
 }
 
+.about-info-wrapper {
+  background-color: var(--bg-black-color);
+  padding: clamp(32px, 4vw, 64px) 0;
+}
+
+.about-info-wrapper h1 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.about-info-wrapper p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+  line-height: 120%;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: clamp(32px, 4vw, 64px);
+}
+
+.about-info-wrapper .about-info-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: start;
+  align-items: start;
+  text-align: center;
+  gap: clamp(18px, 1.5vw, 24px);
+}
+
+.about-info-wrapper .about-info-container .about-info-item img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-info-wrapper .about-info-container .about-info-item p {
+  font-size: clamp(13px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+  line-height: 120%;
+}
+
 /* ABOUT PAGE CUSTOM CSS END */
 
 /* =============================================================== */
