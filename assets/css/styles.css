@@ -662,9 +662,9 @@ p {
 }
 
 .courses-wrapper .courses-card:hover .course-button {
-  background-color: var(--text-color-white);
-  border-color: var(--text-color-black);
-  color: var(--text-color-black);
+  background-color: var(--text-color-black);
+  border-color: var(--btn-bg-color);
+  color: var(--btn-bg-color);
 }
 /* courses section end */
 
