@@ -2035,6 +2035,11 @@ p {
 /* =============================================================== */
 
 /* SERTIFICATE PAGE CUSTOM CSS START */
+
+.sertificate-image-wrapper {
+  padding: 0 15px;
+}
+
 .sertificate-item {
   border-radius: 24px;
   border: 12px solid #f9f9f9;
