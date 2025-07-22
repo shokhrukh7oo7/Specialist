@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+
+    <!-- intltelinput css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+
+    <!-- Fancy box css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="/assets/images/logo.svg" />
+
+    <!-- Glider min css -->
+    <link rel="stylesheet" href="/assets/css/glider.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container-bg">
+      <div class="container">
+        <div class="top-bar-wrapper">
+          <div class="top-bar-left">
+            <div class="contact-item">
+              <img
+                src="/assets/images/top-bar/envelope-simple.svg"
+                alt="image"
+              />
+              <a href="#">spetsialist.uz@gmail.com</a>
+            </div>
+            <div class="divider">|</div>
+            <div class="contact-item">
+              <img src="/assets/images/top-bar/phone.svg" alt="image" />
+              <a href="tel:+998977009217">+998 97 700 92 17</a>
+            </div>
+            <div class="divider">|</div>
+            <div class="contact-item">
+              <img src="/assets/images/top-bar/phone.svg" alt="image" />
+              <a href="tel:+998997009217">+998 99 700 92 17</a>
+            </div>
+          </div>
+
+          <div class="top-bar-right">
+            <div class="social-wrapper">
+              <p class="social-title">Мы в социальных сетях:</p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="https://webline.uz/" target="_blank">
+                    <img
+                      src="/assets/images/top-bar/instagram-logo.svg"
+                      alt="Isntagram"
+                    />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="https://webline.uz/" target="_blank">
+                    <img
+                      src="/assets/images/top-bar/telegram-logo.svg"
+                      alt="Telegram"
+                    />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="https://webline.uz/" target="_blank">
+                    <img
+                      src="/assets/images/top-bar/youtube-logo.svg"
+                      alt="YouTube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="divider">|</div>
+
+            <div class="language-wrapper">
+              <div class="dropdown">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Русский
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Uzbek</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="header-wrapper-default">
+          <nav class="navbar-wrapper">
+            <div class="navbar-logo-wrapper">
+              <a href="/index.html">
+                <img src="/assets/images/logo-black.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="navbar-menu-wrapper" id="nav-menu">
+              <ul class="navbar-menu-list">
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/about-us.html">О нас</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/course.html">Курсы</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/testimonials.html">Отзывы</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/sertificates.html">Сертификаты</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/team.html">Команда</a>
+                </li>
+                <li class="navbar-menu-item">
+                  <a href="/assets/pages/contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <div class="navbar-contact-wrapper d-block d-xl-none">
+                <button class="btn contact-btn" id="contact-btn">
+                  Свяжитесь с нами
+                </button>
+              </div>
+            </div>
+            <div class="navbar-contact-wrapper d-none d-xl-block">
+              <button class="btn contact-btn" id="contact-btn">
+                Свяжитесь с нами
+              </button>
+            </div>
+
+            <!-- Бургер-кнопка -->
+            <button
+              class="navbar-toggler d-xl-none"
+              type="button"
+              id="burger-btn"
+              aria-label="Toggle navigation"
+            >
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-form-wrapper">
+              <div class="contact-form">
+                <h3>Свяжитесь с нами</h3>
+                <p>Наши менеджеры скоро с вам свяжутся</p>
+                <form>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="last-name"
+                      id="last-name"
+                      type="text"
+                      placeholder="Фамилия*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="first-name"
+                      id="first-name"
+                      type="text"
+                      placeholder="Имя*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="tel"
+                      name="phone-number"
+                      id="phone-number"
+                      placeholder="Номер телефона*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Эл.почта"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      id="message"
+                      placeholder="Сообщение"
+                    ></textarea>
+                  </div>
+
+                  <button class="btn send-btn">Отправить заявку</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="about-social-wrapper">
+              <h3>
+                Присоединяйтесь к учебному центру "Специалист" и развивайтесь с
+                теми, кто знает туризм изнутри!
+              </h3>
+              <div class="about-social-box">
+                <p class="about-social-title">Мы в социальных сетях</p>
+                <div class="about-social">
+                  <a href="#">
+                    <img
+                      src="/assets/images/top-bar/instagram-logo.svg"
+                      alt="icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/assets/images/top-bar/telegram-logo.svg"
+                      alt="icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/assets/images/top-bar/youtube-logo.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <div class="footer-logo">
+                  <a href="/index.html">
+                    <img src="/assets/images/logo.svg" alt="img" />
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <img src="/assets/images/footer/map-pin.svg" alt="image" />
+                    <p>г. Ташкент, Мирабадский район, Авлие-Ота 3</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/assets/images/footer/envelope-simple.svg"
+                      alt="image"
+                    />
+                    <a href="mailto:spetsialist.uz@gmail.com"
+                      >spetsialist.uz@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <img src="/assets/images/footer/phone.svg" alt="image" />
+                    <a href="tel:+998977009217">+99897 700 92 17</a>
+                  </li>
+                  <li>
+                    <img src="/assets/images/footer/phone.svg" alt="image" />
+                    <a href="tel:+998997009217">+99899 700 92 17</a>
+                  </li>
+                </ul>
+
+                <div class="develop-wrapper">
+                  <p>Spetsialist • Ташкент © 2025</p>
+                  <p>
+                    Сайт разработала студия
+                    <a href="https://webline.uz">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <h4>Ссылка</h4>
+                <ul>
+                  <li>
+                    <a href="/assets/pages/about-us.html">О нас</a>
+                  </li>
+                  <li>
+                    <a href="/assets/pages/course.html">Курсы</a>
+                  </li>
+                  <li>
+                    <a href="/assets/pages/sertificates.html">Сертификаты</a>
+                  </li>
+                  <li>
+                    <a href="/assets/pages/testimonials.html">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="/assets/pages/contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <h4>Соцсети</h4>
+                <ul>
+                  <li>
+                    <a href="#">Telegram</a>
+                  </li>
+                  <li>
+                    <a href="#">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#">Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Threeds</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
+              <div class="footer-item">
+                <div class="form-header">
+                  <h4>Оставьте свои данные</h4>
+                  <p>И наши менеджеры свяжутся с вами скоро</p>
+                </div>
+                <form id="application-form" novalidate>
+                  <div class="form-group">
+                    <input type="text" id="name" placeholder="Имя" required />
+                    <div class="error-text" id="name-error"></div>
+                  </div>
+
+                  <div class="form-group phone-group">
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="phone-input"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </div>
+                  <div class="error-text" id="phone-error"></div>
+
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Эл.почта"
+                      required
+                    />
+                    <div class="error-text" id="email-error"></div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn contact-btn"
+                    id="contact-btn"
+                  >
+                    Отправить заявку
+                  </button>
+                </form>
+                <div class="develop-wrapper develop-wrapper-mobile">
+                  <p>Spetsialist • Ташкент © 2025</p>
+                  <p>
+                    Сайт разработала студия
+                    <a href="https://webline.uz">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="contact-modal hidden" id="contact-modal">
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <h3>Свяжитесь с нами</h3>
+          <p>Наши менеджеры скоро с вам свяжутся</p>
+        </div>
+        <button class="btn close-btn" id="close-btn">
+          <img src="/assets/images/x.svg" alt="image" />
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input
+              class="form-control"
+              name="last-name"
+              id="last-name"
+              type="text"
+              placeholder="Фамилия*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              name="first-name"
+              id="first-name"
+              type="text"
+              placeholder="Имя*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Номер телефона*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Эл.почта"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
+
+          <button class="btn send-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
+
+    <!-- Fancy box js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- intltelinput js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+    <!-- Glider js -->
+    <script src="/assets/js/glider.js"></script>
+
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
