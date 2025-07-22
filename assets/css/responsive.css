@@ -243,6 +243,19 @@
     align-items: center;
     text-align: center;
   }
+  .about-social-wrapper h3 {
+    text-align: center;
+  }
+  .about-social-wrapper .about-social-description {
+    text-align: center;
+  }
+  .about-social-wrapper .about-social-box {
+    justify-content: center;
+  }
+  .about-social-wrapper .about-social-box .about-social img {
+    width: 25px;
+    height: 25px;
+  }
   /* about us end */
 }
 

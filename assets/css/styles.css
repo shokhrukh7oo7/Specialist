@@ -1793,8 +1793,11 @@ p {
 }
 .about-us-banner-wrapper img {
   width: 100%;
-  max-height: 542px;
+  /* max-height: 542px; */
   object-fit: cover;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  border-radius: 32px;
 }
 .about-us-content h3 {
   font-size: clamp(20px, 3.5vw, 48px);
@@ -1975,6 +1978,57 @@ p {
   line-height: 120%;
 }
 
+.about-social-wrapper {
+  padding: clamp(32px, 4vw, 64px) 10px;
+}
+
+.about-social-wrapper h3 {
+  font-size: clamp(20px, 3.5vw, 48px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  line-height: 120%;
+  margin-bottom: clamp(18px, 2vw, 32px);
+}
+
+.about-social-wrapper .about-social-description {
+  font-size: clamp(15px, 2vw, 32px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  line-height: 120%;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: clamp(14px, 1.5vw, 24px);
+}
+
+.about-social-wrapper .about-social-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+
+.about-social-wrapper .about-social-box .about-social-title {
+  font-size: clamp(15px, 2vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  line-height: 120%;
+}
+
+.about-social-wrapper .about-social-box .about-social {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+
+.about-social-wrapper .about-social-box .about-social img {
+  width: 48px;
+  height: 48px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-social-wrapper .about-social-box .about-social img:hover {
+  transform: scale(1.1);
+}
 /* ABOUT PAGE CUSTOM CSS END */
 
 /* =============================================================== */
