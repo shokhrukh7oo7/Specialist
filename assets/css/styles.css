@@ -1802,12 +1802,13 @@ p {
 .about-us-content h3 {
   font-size: clamp(20px, 3.5vw, 48px);
   font-weight: 400;
-  color: var(--text-color-black);
+  color: #777777;
   margin: 0;
   line-height: 120%;
 }
 .about-us-content h3 span {
   font-weight: 500;
+  color: var(--text-color-black);
 }
 .about-us-content .about-us-intro-content {
   display: grid;
@@ -2032,6 +2033,21 @@ p {
 /* ABOUT PAGE CUSTOM CSS END */
 
 /* =============================================================== */
+
+/* SERTIFICATE PAGE CUSTOM CSS START */
+.sertificate-item {
+  border-radius: 24px;
+  border: 12px solid #f9f9f9;
+  height: 100%;
+}
+
+.sertificate-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SERTIFICATE PAGE CUSTOM CSS END */
+
 /* =============================================================== */
 
 /* FOOTER SECTION START */

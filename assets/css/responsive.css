@@ -1,3 +1,9 @@
+/* @media (max-width: 1400px) {
+  .sertificate-item {
+    min-height: 400px;
+  }
+} */
+
 @media (max-width: 1200px) {
   .navbar-wrapper {
     flex-wrap: wrap;
