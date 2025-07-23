@@ -263,6 +263,18 @@
     height: 25px;
   }
   /* about us end */
+
+  /* contact start */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-address-wrapper {
+    text-align: center;
+  }
+  .contact-wrapper .contact-form-wrapper {
+    max-width: 768px;
+  }
+  /* contact end */
 }
 
 @media (max-width: 600px) {
