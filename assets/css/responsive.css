@@ -274,6 +274,9 @@
   .contact-wrapper .contact-form-wrapper {
     max-width: 768px;
   }
+  .map-wrapper iframe {
+    aspect-ratio: 2 / 1.5;
+  }
   /* contact end */
 }
 
