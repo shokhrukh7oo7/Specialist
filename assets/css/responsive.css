@@ -139,6 +139,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* team page start */
+  .team-image-wrapper .team-image-item-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* team page end */
 }
 
 @media (max-width: 768px) {
@@ -434,6 +440,11 @@
     padding: 0 10px;
   }
   /* about us end */
+  /* team page start */
+  .team-image-wrapper .team-image-item-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* team page end */
 }
 
 @media (max-width: 395px) {

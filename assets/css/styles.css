@@ -2055,6 +2055,133 @@ p {
 
 /* =============================================================== */
 
+/* TEAM PAGE CUSTOM CSS START */
+.team-image-wrapper {
+  padding: clamp(32px, 4vw, 64px) 10px;
+}
+.team-image-wrapper .team-image-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 48px) clamp(18px, 1.5vw, 26px);
+}
+
+.team-image-wrapper .team-image-item-wrapper .team-item {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.45;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.team-image-wrapper
+  .team-image-item-wrapper
+  .team-item
+  .glider-item-image-wrapper {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+.team-image-wrapper
+  .team-image-item-wrapper
+  .team-item
+  .glider-item-image-wrapper
+  h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  margin: 0;
+}
+.team-image-wrapper
+  .team-image-item-wrapper
+  .team-item
+  .glider-item-image-wrapper
+  p {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding: clamp(20px, 2vw, 32px) clamp(8px, 1vw, 16px);
+  color: white;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 700;
+  color: var(--text-color-white);
+  margin: 0 0 10px;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content p {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content ul {
+  margin-top: clamp(20px, 2.5vw, 40px);
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content ul li {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 11px;
+  text-align: start;
+}
+.team-image-wrapper
+  .team-image-item-wrapper
+  .team-item
+  .hover-content
+  ul
+  li
+  img {
+  width: 100%;
+  height: 24px;
+  max-width: 24px;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item .hover-content ul li p {
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 400;
+  color: var(--text-color-white);
+  margin: 0;
+}
+.team-image-wrapper .team-image-item-wrapper .team-item:hover .hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-image-wrapper .team-image-item-wrapper .team-item:hover img {
+  transform: scale(1.1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.team-image-wrapper
+  .team-image-item-wrapper
+  .team-item:hover
+  .glider-item-image-wrapper {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* TEAM PAGE CUSTOM CSS END */
+
+/* =============================================================== */
+
 /* CONTACT PAGE CUSTOM CSS START */
 .contact-wrapper {
   display: flex;
@@ -2084,7 +2211,7 @@ p {
   color: var(--text-color-black);
   margin: 0;
 }
-.contact-wrapper .contact-form-wrapper .contact-form p{
+.contact-wrapper .contact-form-wrapper .contact-form p {
   font-size: clamp(13px, 2vw, 16px);
   font-weight: 400;
   color: #777777;
