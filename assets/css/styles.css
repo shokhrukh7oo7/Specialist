@@ -2274,6 +2274,73 @@ p {
   border-left: 15px solid var(--text-color-black);
   z-index: 1;
 }
+
+.comment-wrapper
+  .comment-item-wrapper
+  .comment-item
+  .glider-item-video
+  .play-btn-wrapper
+  .modal-dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 10px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.comment-wrapper
+  .comment-item-wrapper
+  .comment-item
+  .glider-item-video
+  .play-btn-wrapper
+  .modal-dialog
+  .modal-content {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.comment-wrapper
+  .comment-item-wrapper
+  .comment-item
+  .glider-item-video
+  .play-btn-wrapper
+  .modal-body {
+  position: relative;
+  padding: 0px;
+}
+.comment-wrapper
+  .comment-item-wrapper
+  .comment-item
+  .glider-item-video
+  .play-btn-wrapper
+  .modal-dialog
+  .embed-responsive {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+}
+.comment-wrapper
+  .comment-item-wrapper
+  .comment-item
+  .glider-item-video
+  .play-btn-wrapper
+  .modal-dialog
+  .embed-responsive
+  iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
 .comment-wrapper
   .comment-item-wrapper
   .comment-item
