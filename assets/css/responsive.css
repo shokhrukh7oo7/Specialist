@@ -292,7 +292,11 @@
   .comment-wrapper .comment-item-wrapper .comment-item .glider-item-content h3 {
     padding: 0 16px 0;
   }
-  .comment-wrapper .comment-item-wrapper .comment-item .glider-item-content .glider-item-footer {
+  .comment-wrapper
+    .comment-item-wrapper
+    .comment-item
+    .glider-item-content
+    .glider-item-footer {
     margin: 50px 5px 5px;
   }
   /* comment end */
@@ -311,6 +315,19 @@
     aspect-ratio: 2 / 1.5;
   }
   /* contact end */
+
+  /* course-detail start */
+  .course-detail-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .course-detail-wrapper .course-detail-left {
+    width: 100%;
+    gap: clamp(20px, 2.5vw, 32px);
+    justify-content: center;
+    align-items: center;
+  }
+  /* course-detail end */
 }
 
 @media (max-width: 600px) {
@@ -469,6 +486,19 @@
     grid-template-columns: repeat(1, 1fr);
   }
   /* team page end */
+
+  /* course page start */
+  .course-detail-wrapper {
+    height: 100%;
+  }
+  .course-detail-wrapper .course-detail-right {
+    display: none;
+  }
+  .course-detail-wrapper .course-detail-left .course-detail-header .course-features {
+    justify-content: center;
+    align-items: center;
+  }
+  /* course page end */
 }
 
 @media (max-width: 395px) {
