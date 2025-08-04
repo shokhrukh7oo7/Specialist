@@ -1800,7 +1800,8 @@ p {
   border-radius: 32px;
 }
 .about-us-content h3 {
-  font-size: clamp(20px, 3.5vw, 48px);
+  /* font-size: clamp(20px, 3.5vw, 48px); */
+  font-size: clamp(20px, 3vw, 38px);
   font-weight: 400;
   color: #777777;
   margin: 0;
@@ -2602,6 +2603,223 @@ p {
   max-width: 260px;
 }
 
+.course-banner-info-title h3 {
+  font-size: clamp(20px, 3vw, 38px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin-bottom: clamp(14px, 1.5vw, 24px);
+  line-height: 140%;
+}
+
+.course-banner-info-title span {
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+
+.accordion-box {
+  background-color: var(--card-bg);
+  padding: 10px 0;
+}
+
+.accordion-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(14px, 1.5vw, 24px);
+  width: 100%;
+  margin: clamp(18px, 2vw, 32px) 0;
+}
+
+.accordion-header-title {
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: clamp(14px, 1.5vw, 24px) 0;
+}
+
+.accordion-wrapper .accordion-container {
+  width: 75%;
+}
+
+.accordion-wrapper .accordion-button {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+
+.accordion-wrapper .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  border-bottom: 1px solid var(--light-grey-color);
+}
+.accordion-wrapper .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-wrapper .accordion-body {
+  padding: 0;
+}
+
+.accordion-wrapper .accordion-body ul li {
+  padding: 12px 40px;
+  border-bottom: 1px solid var(--light-grey-color);
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+
+.accordion-wrapper .pricee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.5vw, 24px);
+  width: 25%;
+}
+
+.accordion-wrapper .pricee-wrapper .price-top {
+  background-color: var(--text-color-white);
+  border-radius: 8px;
+}
+
+.accordion-wrapper .pricee-wrapper .price-top h5 {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  padding: clamp(10px, 1vw, 16px);
+  margin-bottom: 0;
+}
+
+.accordion-wrapper .pricee-wrapper .price-top .price-info .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(10px, 1vw, 16px);
+  border-top: 1px solid var(--light-grey-color);
+}
+.accordion-wrapper .pricee-wrapper .price-top .price-info .item:last-child {
+  border-bottom: 1px solid var(--light-grey-color);
+}
+.accordion-wrapper .pricee-wrapper .price-top .price-info .item p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.accordion-wrapper .pricee-wrapper .price-top .price-info .item span {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.accordion-wrapper .pricee-wrapper .price-top a {
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+  background-color: var(--btn-bg-color);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(10px, 1vw, 16px);
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.accordion-wrapper .pricee-wrapper .price-top a:hover {
+  background-color: var(--text-color-black);
+  color: var(--btn-bg-color);
+}
+
+.accordion-wrapper .price-bottom {
+  background-color: var(--text-color-white);
+  border-radius: 8px;
+  padding: clamp(10px, 1vw, 16px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1vw, 10px);
+}
+.accordion-wrapper .price-bottom h5 {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: 0;
+}
+.accordion-wrapper .price-bottom p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+.accordion-wrapper .price-bottom a {
+  background-color: #f0f0f0;
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(10px, 1vw, 16px);
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+.accordion-wrapper .price-bottom a:hover {
+  background-color: var(--text-color-black);
+  color: var(--btn-bg-color);
+}
+
+.accordion-box .course-detail-info-wrapper {
+  width: 73.5%;
+  background-color: var(--text-color-white);
+  border-radius: 8px;
+  padding: clamp(10px, 1vw, 16px);
+  margin: 0 0 clamp(32px, 4vw, 64px);
+}
+.accordion-box .course-detail-info-wrapper h2 {
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+.accordion-box .course-detail-info-wrapper .course-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.accordion-box .course-detail-info-wrapper .course-detail-info .item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  align-items: start;
+  gap: clamp(7px, 1vw, 12px);
+}
+
+.accordion-box .course-detail-info-wrapper .course-detail-info .item p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+
+.accordion-box .course-detail-info-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+.course-glider-wrapper .glider-wrapper .glider-contain .glider-track {
+  gap: 24px;
+}
+
+.course-glider-wrapper {
+  padding: clamp(32px, 4vw, 64px) 0;
+}
+.course-glider-wrapper .glider-header h3 {
+  margin-bottom: clamp(18px, 2vw, 32px);
+}
+
+.course-glider-wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1.5;
+  object-fit: cover;
+  border-radius: 24px;
+}
 /* COURSE DETAIL PAGE CUSTOM CSS END */
 
 /* =============================================================== */

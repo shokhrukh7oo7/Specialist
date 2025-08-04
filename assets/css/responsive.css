@@ -153,6 +153,15 @@
     grid-template-columns: repeat(2, 1fr);
   }
   /* team page end */
+  .accordion-wrapper .accordion-container {
+    width: 65%;
+  }
+  .accordion-wrapper .pricee-wrapper {
+    width: 35%;
+  }
+  .accordion-box .course-detail-info-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -328,6 +337,15 @@
     align-items: center;
   }
   /* course-detail end */
+  .accordion-wrapper {
+    flex-direction: column;
+  }
+  .accordion-wrapper .accordion-container {
+    width: 100%;
+  }
+  .accordion-wrapper .pricee-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -494,11 +512,26 @@
   .course-detail-wrapper .course-detail-right {
     display: none;
   }
-  .course-detail-wrapper .course-detail-left .course-detail-header .course-features {
+  .course-detail-wrapper
+    .course-detail-left
+    .course-detail-header
+    .course-features {
     justify-content: center;
     align-items: center;
   }
   /* course page end */
+  .course-banner-info-title h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .accordion-header-title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .course-glider-wrapper .glider-header h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 395px) {

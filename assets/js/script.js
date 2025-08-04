@@ -150,6 +150,28 @@ function initGliders() {
         ],
       },
     },
+    {
+      selector: ".course-detail",
+      options: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        draggable: true,
+        rewind: true,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev-sertificate",
+          next: ".glider-next-sertificate",
+        },
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 4.3 } },
+          { breakpoint: 992, settings: { slidesToShow: 3.3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 576, settings: { slidesToShow: 2.1 } },
+          { breakpoint: 0, settings: { slidesToShow: 1.1 } },
+        ],
+      },
+    },
   ];
 
   sliders.forEach((slider) => {
