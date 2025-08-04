@@ -2970,6 +2970,24 @@ p {
   padding: clamp(10px, 1vw, 16px);
   border-top: 1px solid var(--light-grey-color);
 }
+.payment-wrapper .payment-right .price .payment-right-info .price-info .item p {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: 0;
+}
+.payment-wrapper
+  .payment-right
+  .price
+  .payment-right-info
+  .price-info
+  .item
+  span {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+}
 .payment-wrapper .payment-right .price button {
   font-size: clamp(15px, 1.5vw, 18px);
   font-weight: 700;

@@ -162,6 +162,12 @@
   .accordion-box .course-detail-info-wrapper {
     width: 100%;
   }
+  .payment-wrapper .payment-left {
+    width: 70%;
+  }
+  .payment-wrapper .payment-right {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -344,6 +350,23 @@
     width: 100%;
   }
   .accordion-wrapper .pricee-wrapper {
+    width: 100%;
+  }
+  .payment-wrapper {
+    flex-direction: column;
+  }
+  .payment-wrapper .payment-left .payment-top .payment-top-item .payment-top-item-image-wrapper {
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .payment-wrapper .payment-left .payment-bottom .payment-bottom-item form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .payment-wrapper .payment-left {
+    width: 100%;
+  }
+  .payment-wrapper .payment-right {
     width: 100%;
   }
 }
