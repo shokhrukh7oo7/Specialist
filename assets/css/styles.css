@@ -1801,7 +1801,7 @@ p {
 }
 .about-us-content h3 {
   /* font-size: clamp(20px, 3.5vw, 48px); */
-  font-size: clamp(20px, 3vw, 38px);
+  font-size: clamp(20px, 3vw, 34px);
   font-weight: 400;
   color: #777777;
   margin: 0;
@@ -2604,7 +2604,7 @@ p {
 }
 
 .course-banner-info-title h3 {
-  font-size: clamp(20px, 3vw, 38px);
+  font-size: clamp(20px, 3vw, 34px);
   font-weight: 400;
   color: var(--text-color-black);
   margin-bottom: clamp(14px, 1.5vw, 24px);
