@@ -2824,6 +2824,175 @@ p {
 
 /* =============================================================== */
 
+/* PAYMENT PAGE CUSTOM CSS START */
+.payment-bg {
+  background-color: var(--card-bg);
+  padding: clamp(14px, 1.5vw, 24px) 10px;
+}
+.payment-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+.payment-wrapper .payment-left {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 16px);
+  width: 75%;
+}
+
+.payment-wrapper .payment-left .payment-top .payment-top-item h3 {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: 0;
+}
+
+.payment-wrapper .payment-left .payment-top {
+  background-color: var(--text-color-white);
+  padding: clamp(15px, 2vw, 24px);
+  border-radius: 8px;
+}
+
+.payment-wrapper
+  .payment-left
+  .payment-top
+  .payment-top-item
+  .payment-top-item-image-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: clamp(8px, 1vw, 16px);
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  margin-top: clamp(14px, 1.5vw, 24px);
+}
+
+.payment-wrapper
+  .payment-left
+  .payment-top
+  .payment-top-item
+  .payment-top-item-image-wrapper
+  .payment-top-item-title-wrapper
+  p {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+}
+.payment-wrapper
+  .payment-left
+  .payment-top
+  .payment-top-item
+  .payment-top-item-image-wrapper
+  .payment-top-item-title-wrapper
+  span {
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 400;
+  color: var(--text-color-black);
+}
+
+.payment-wrapper
+  .payment-left
+  .payment-top
+  .payment-top-item
+  .payment-top-item-image-wrapper
+  img {
+  width: 100%;
+  max-width: 211px;
+}
+
+.payment-wrapper .payment-left .payment-bottom {
+  background-color: var(--text-color-white);
+  padding: clamp(15px, 2vw, 24px);
+  border-radius: 8px;
+}
+.payment-wrapper .payment-left .payment-bottom .payment-bottom-item h3 {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin-bottom: clamp(14px, 1.5vw, 24px);
+}
+.payment-wrapper .payment-left .payment-bottom .payment-bottom-item form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 1vw, 16px);
+}
+.payment-wrapper .payment-left .payment-bottom .payment-bottom-item form input {
+  padding: 12px 16px;
+  font-size: clamp(14px, 1vw, 16px);
+  color: var(--text-color-black);
+  background-color: var(--card-bg);
+  border-color: transparent;
+}
+.payment-wrapper
+  .payment-left
+  .payment-bottom
+  .payment-bottom-item
+  form
+  input::placeholder {
+  color: #777777;
+}
+.payment-wrapper
+  .payment-left
+  .payment-bottom
+  .payment-bottom-item
+  form
+  input:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.1rem var(--btn-bg-color);
+}
+
+.payment-wrapper .payment-right {
+  background-color: var(--text-color-white);
+  border-radius: 8px;
+  width: 25%;
+  display: flex;
+}
+
+.payment-wrapper .payment-right .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.payment-wrapper .payment-right .price .payment-right-info h5 {
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  padding: clamp(10px, 1vw, 16px);
+  margin-bottom: 0;
+}
+.payment-wrapper .payment-right .price .payment-right-info .price-info .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(10px, 1vw, 16px);
+  border-top: 1px solid var(--light-grey-color);
+}
+.payment-wrapper .payment-right .price button {
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--text-color-black);
+  margin: 0;
+  background-color: var(--btn-bg-color);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(10px, 1vw, 16px);
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  border-color: transparent;
+}
+.payment-wrapper .payment-right .price button:hover {
+  background-color: var(--text-color-black);
+  color: var(--btn-bg-color);
+}
+/* PAYMENT PAGE CUSTOM CSS END */
+
+/* =============================================================== */
+
 /* CONTACT PAGE CUSTOM CSS START */
 .contact-wrapper {
   display: flex;
