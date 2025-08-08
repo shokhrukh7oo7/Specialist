@@ -95,6 +95,7 @@ function initGliders() {
         slidesToShow: 1,
         slidesToScroll: 1,
         scrollLock: true,
+        draggable: true,
         rewind: true,
         duration: 0.5,
         arrows: {
@@ -114,6 +115,7 @@ function initGliders() {
         slidesToShow: 1,
         slidesToScroll: 1,
         scrollLock: true,
+        draggable: true,
         rewind: true,
         duration: 0.5,
         arrows: {
@@ -135,6 +137,7 @@ function initGliders() {
         slidesToShow: 1,
         slidesToScroll: 1,
         scrollLock: true,
+        draggable: true,
         rewind: true,
         duration: 0.5,
         arrows: {
